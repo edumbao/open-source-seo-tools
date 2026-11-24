@@ -2,7 +2,7 @@
 
 A beginner-friendly directory of open-source tools that may help with SEO, publishing, analytics, and content work. The project is also a record of learning how to build and publish a small web application with GitHub and Vercel.
 
-The project name and scope are working choices. The first project records are starter examples for the interface. Review each project's description, current status, license, and requirements before treating the listings as editorially verified.
+The project name and scope are working choices. Listings are introductory notes, not endorsements. For each entry, start with the official repository and documentation, record the code license separately from documentation licenses when they differ, describe likely setup requirements, and date the review. Recheck those details before making adoption or legal decisions.
 
 ## Current features
 
@@ -40,7 +40,7 @@ src/
     projects.ts            Directory records and categories
 ```
 
-To add or edit a project, update `src/data/projects.ts`. Each record has a short description, category, audience, languages, repository and website links, a plain-language use case, and a review note.
+To add or edit a project, update `src/data/projects.ts`. Each record has a short description, category, audience, languages, repository and website links, license and license-source link, license check date, a plain-language use case, and a review note. Confirm license details in the project's own repository; do not assume that a hosted service, add-on, theme, or documentation set uses the same license as the core project.
 
 ## Learning notes
 
@@ -54,7 +54,7 @@ As the project develops, document each checkpoint with:
 
 ## Next steps
 
-- Review starter project records using each project's official repository and documentation.
+- Expand the directory with additional projects after checking their official sources and recording the review date.
 - Refine the categories and curation criteria based on the intended audience.
 - Add an RSS feed and a clear project suggestion process.
 - Consider scheduled metadata updates after the manual publishing workflow is reliable.

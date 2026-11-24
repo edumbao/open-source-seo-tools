@@ -58,6 +58,8 @@ export default async function ProjectPage(props: PageProps<"/tools/[slug]">) {
               <div><dt>Topic</dt><dd>{project.category}</dd></div>
               <div><dt>May suit</dt><dd>{project.audience}</dd></div>
               <div><dt>Repository languages</dt><dd>{project.languages.join(", ")}</dd></div>
+              <div><dt>Repository license</dt><dd><a href={project.licenseUrl} target="_blank" rel="noreferrer">{project.license} ↗</a></dd></div>
+              <div><dt>License checked</dt><dd>{project.licenseCheckedOn}</dd></div>
             </dl>
           </section>
 
