@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ProjectDirectory } from "@/components/project-directory";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { projects } from "@/data/projects";
 
 export default function Home() {
@@ -15,7 +16,10 @@ export default function Home() {
           <a href="#method">How we choose</a>
           <a href="#about">About</a>
         </nav>
-        <a className="header-cta" href="#directory">Browse tools <span aria-hidden="true">↘</span></a>
+        <div className="header-actions">
+          <ThemeToggle />
+          <a className="header-cta" href="#directory">Browse tools <span aria-hidden="true">↘</span></a>
+        </div>
       </header>
 
       <main>

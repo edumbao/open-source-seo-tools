@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { getProject, projects } from "@/data/projects";
 
 export function generateStaticParams() {
@@ -31,7 +32,10 @@ export default async function ProjectPage(props: PageProps<"/tools/[slug]">) {
           <span className="brand-name">Field Guide<span> / Open source for search &amp; content</span></span>
         </Link>
         <nav className="header-nav" aria-label="Main navigation"><Link href="/#directory">Directory</Link><Link href="/#method">How we choose</Link></nav>
-        <Link className="header-cta" href="/#directory">All tools <span aria-hidden="true">↗</span></Link>
+        <div className="header-actions">
+          <ThemeToggle />
+          <Link className="header-cta" href="/#directory">All tools <span aria-hidden="true">↗</span></Link>
+        </div>
       </header>
 
       <main className="detail-main wrap">
