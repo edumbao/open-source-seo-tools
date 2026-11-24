@@ -33,7 +33,7 @@ export default function ProjectPage(props: PageProps<"/tools/[slug]">) {
         <nav className="header-nav" aria-label="Main navigation"><Link href="/#directory">Directory</Link><Link href="/#method">How we choose</Link></nav>
         <div className="header-actions">
           <ThemeToggle />
-          <Link className="header-cta" href="/#directory">All tools <span aria-hidden="true">↗</span></Link>
+          <Link className="header-cta" href="/#directory">All tools</Link>
         </div>
       </header>
 
@@ -59,15 +59,15 @@ async function ProjectContent({ params }: { params: ProjectParams }) {
 
   return (
     <main className="detail-main wrap">
-      <Link className="back-link" href="/#directory"><span aria-hidden="true">←</span> Back to all tools</Link>
+      <Link className="back-link" href="/#directory">Back to all tools</Link>
       <article className="detail-article">
         <div className="detail-kicker"><span className="category-pill">{project.category}</span><span>FIELD NOTE · {String(projects.findIndex((item) => item.slug === slug) + 1).padStart(2, "0")}</span></div>
         <h1>{project.name}</h1>
         <p className="detail-summary">{project.summary}</p>
 
         <div className="detail-actions">
-          <a className="button button-dark" href={project.website} target="_blank" rel="noreferrer">Visit project site <span aria-hidden="true">↗</span></a>
-          <a className="button button-light" href={project.repository} target="_blank" rel="noreferrer">View source on GitHub <span aria-hidden="true">↗</span></a>
+          <a className="button button-dark" href={project.website} target="_blank" rel="noreferrer">Visit project site</a>
+          <a className="button button-light" href={project.repository} target="_blank" rel="noreferrer">View source on GitHub</a>
         </div>
 
         <div className="detail-rule" />
@@ -78,7 +78,7 @@ async function ProjectContent({ params }: { params: ProjectParams }) {
             <div><dt>Topic</dt><dd>{project.category}</dd></div>
             <div><dt>May suit</dt><dd>{project.audience}</dd></div>
             <div><dt>Repository languages</dt><dd>{project.languages.join(", ")}</dd></div>
-            <div><dt>Repository license</dt><dd><a href={project.licenseUrl} target="_blank" rel="noreferrer">{project.license} ↗</a></dd></div>
+            <div><dt>Repository license</dt><dd><a href={project.licenseUrl} target="_blank" rel="noreferrer">{project.license}</a></dd></div>
             <div><dt>License checked</dt><dd>{project.licenseCheckedOn}</dd></div>
           </dl>
         </section>

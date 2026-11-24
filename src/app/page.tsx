@@ -18,41 +18,24 @@ export default function Home() {
         </nav>
         <div className="header-actions">
           <ThemeToggle />
-          <a className="header-cta" href="#directory">Browse tools <span aria-hidden="true">↘</span></a>
+          <a className="header-cta" href="#directory">Browse tools</a>
         </div>
       </header>
 
       <main>
-        <section className="hero wrap">
-          <div className="hero-copy">
-            <p className="issue-line"><span className="status-dot" /> A practical guide for curious teams <span className="issue-number">ISSUE 001 · WORK IN PROGRESS</span></p>
-            <h1>Open tools.<br /><em>Clearer choices.</em></h1>
-            <p className="hero-description">
-              A growing field guide to open-source tools for SEO, publishing, analytics, and content work—written for people who want to understand what a tool does before they try it.
-            </p>
-            <div className="hero-actions">
-              <a className="button button-dark" href="#directory">Explore the directory <span aria-hidden="true">↓</span></a>
-              <a className="text-link hero-secondary" href="#method">How entries are selected <span aria-hidden="true">↗</span></a>
-            </div>
-            <div className="hero-footnote">
-              <span><strong>{projects.length}</strong> starter project notes</span>
-              <span className="footnote-divider" />
-              <span>Built for writers, marketers, and small teams</span>
-            </div>
+        <section className="hero">
+          <div className="hero-inner">
+            <p className="hero-kicker">A practical guide for curious teams</p>
+            <h1>Discover open-source tools</h1>
+            <p className="hero-description">Find projects for SEO, publishing, analytics, and content work. Each field note explains what a tool does and what to check before you try it.</p>
+            <a className="hero-button" href="#directory">Browse the directory</a>
+            <p className="hero-footnote">{projects.length} starter project notes · Built for writers, marketers, and small teams</p>
           </div>
-
-          <aside className="hero-note" aria-label="Editor's note">
-            <div className="note-topline"><span>EDITOR’S NOTE</span><span>NO. 001</span></div>
-            <p className="note-quote">“Open source” is a starting point, not a guarantee that a tool will fit your workflow.</p>
-            <div className="note-rule" />
-            <p className="note-copy">Each listing is meant to help you ask better questions: Who is it for? What does it need? What should you review before using it?</p>
-            <span className="note-stamp">LEARN<br />BY DOING</span>
-          </aside>
         </section>
 
         <div className="ticker" aria-label="Guide topics">
           <div className="ticker-inner">
-            <span>SEO &amp; SEARCH</span><b>✳</b><span>CONTENT TOOLS</span><b>✳</b><span>ANALYTICS</span><b>✳</b><span>DOCUMENTATION</span><b>✳</b><span>SMALL TEAM WORKFLOWS</span>
+            <span>SEO &amp; SEARCH</span><b>•</b><span>CONTENT TOOLS</span><b>•</b><span>ANALYTICS</span><b>•</b><span>DOCUMENTATION</span><b>•</b><span>SMALL TEAM WORKFLOWS</span>
           </div>
         </div>
 
@@ -81,7 +64,7 @@ export default function Home() {
               <h2>Made by learning in public.</h2>
               <p>This guide will grow as I research projects, test workflows, and document what I learn about GitHub, code, APIs, and publishing.</p>
             </div>
-            <a className="text-link" href="#directory">Back to the directory <span aria-hidden="true">↑</span></a>
+            <a className="text-link" href="#directory">Back to the directory</a>
           </section>
         </div>
       </main>

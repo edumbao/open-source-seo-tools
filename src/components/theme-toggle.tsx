@@ -13,6 +13,7 @@ export function ThemeToggle() {
       const savedTheme = window.localStorage.getItem(THEME_KEY);
       if (savedTheme === "light" || savedTheme === "dark") {
         document.documentElement.dataset.theme = savedTheme;
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setTheme(savedTheme);
       }
     } catch {
